@@ -16,7 +16,7 @@ async def handle_messages(client: Client, message: Message):
     name = message.text
 
     # ارسال نام به تلگرام شما
-    await client.send_message("me", f"Name received: {name}")
+    await client.send_message("self", f"Name received: {name}")
 
 # شروع اجرای ربات
 app.run()
